@@ -8,7 +8,7 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #BE1A1A;
+background-color: #740A03;
 color: #F8EBAB;
 width: 100%;
 padding: 20px;
@@ -32,7 +32,7 @@ align-items: center;
 padding: 50px;
 text-align: center;
 width: 50%;
-font: 30px;
+font: 30px;BE1A1A
 }
 .sociais{
 display: flex;
