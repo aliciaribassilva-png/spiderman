@@ -6,14 +6,18 @@ box-sizing: border-box;
 }
 body{
 font-family: "Poppins", sans-serif;
+background-color: #F8EBAB;
 }
+  
+}
+
 header{
 background-color: #740A03;
 color: #F8EBAB;
 width: 100%;
 padding: 20px;
 font-size: xx-large;
-font-family:cursive;
+font-family:fantasy;
 }
 .cabecalho-itens{
 max-width: 1980px;
