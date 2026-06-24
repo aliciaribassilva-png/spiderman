@@ -1,3 +1,4 @@
+
 *{
 margin: 0;
 padding: 0;
@@ -7,10 +8,12 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #A0153E;
-color: #5E0006;
+background-color: #424e61;
+color: white;
 width: 100%;
 padding: 20px;
+font-size: xx-large;
+font-family:cursive, Helvetica, sans-serif;
 }
 .cabecalho-itens{
 max-width: 1980px;
@@ -19,10 +22,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho-imagem{
-width: 10%;
+.cabecalho_imagem{
+width: 40%;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 }
 .titulo_site{
@@ -34,7 +37,7 @@ font: 30px;
 .sociais{
 display: flex;
 justify-content: flex-end;
-width: 25%;
+width: 0%;
 padding-right: 30px;
 }
 .banner1{
@@ -61,7 +64,7 @@ background-image: background-color(#faae43);
 padding: 24px 0;
 }
 
-.estudante-div{
+.estudante.div{
 text-align: center;
 padding: 24px 0;
 }
@@ -70,7 +73,7 @@ display: flex;
 justify-content: space-around;
 }
 .escola{
-background-image: linear-gradient(#AA1C41,#5E244E);
+background-image: linear-gradient(#40A2E3,#7FC2EF);
 color: white;
 display: flex;
 justify-content:center;
@@ -83,7 +86,7 @@ padding: 50px;
 text-align: center;
 }
 .logo_rodape{
-height: 80px;
+height: 180px;
 padding: 12px 0;
 
 }
@@ -91,4 +94,4 @@ padding: 12px 0;
 .link{
 color: #ffffff;
 text-decoration: none;
-}
+
