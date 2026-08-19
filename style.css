@@ -52,11 +52,18 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho_imagem{
-width: 40%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+/* No elemento pai (ex: header ou div pai) */
+.container_pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Na imagem */
+.cabecalho_imagem {
+  width: 300px; /* Altere para o tamanho desejado (ex: 50%, 400px, etc) */
+  height: auto;  /* Mantém a proporção original */
 }
 .titulo_site{
 padding: 50px;
