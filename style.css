@@ -1,37 +1,69 @@
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/* RESET E ESTILOS GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-font-family: "Poppins", sans-serif;
-background-color: #FFFDF1;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFFDF1;
 }
-  
-header{
-background-color: #9e5555;
-color: #d4bc8c;
-width: 100%;
-padding: 20px;
-font-size: xx-large;
-font-family:fantasy;
+
+/* CABEÇALHO E MENU */
+header {
+  background-color: #9e5555;
+  color: #d4bc8c;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  font-family: fantasy;
 }
+
+.cabecalho-itens {
+  max-width: 1980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container_pai {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente (opcional) */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
+.cabecalho_imagem {
+  width: 300px;
+  height: auto;
+}
+
+.titulo_site {
+  padding: 50px;
+  text-align: center;
+  width: 50%;
+  font-size: 30px;
+  color: #BE1A1A;
+}
+
+.sociais {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+/* NAVEGAÇÃO (MENU) */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #b85f5f;
-}
-
-li {
-  float: left;
+  display: flex;
+  justify-content: center;
 }
 
 li a {
@@ -45,95 +77,36 @@ li a {
 li a:hover {
   background-color: #111;
 }
-.cabecalho-itens{
-max-width: 1980px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-/* No elemento pai (ex: header ou div pai) */
-.container_pai {
+
+.banner1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
-/* Na imagem */
-.cabecalho_imagem {
-  width: 300px; /* Altere para o tamanho desejado (ex: 50%, 400px, etc) */
-  height: auto;  /* Mantém a proporção original */
-}
-.titulo_site{
-padding: 50px;
-text-align: center;
-width: 50%;
-font: 30px;BE1A1A
-}
-.sociais{
-display: flex;
-justify-content: flex-end;
-width: 0%;
-padding-right: 30px;
-}
-.banner1{
-display: flex;
-justify-content: center;
-}
-/* Container que envolve todos os 6 álbuns */
+/* SEÇÃO DE ÁLBUNS (ORGANIZADOS 3 EM CIMA E 3 EM BAIXO) */
 .estudantes_todos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
-  gap: 30px 20px;                         /* Espaço entre as linhas e colunas */
-  justify-items: center;                   /* Centraliza cada card no seu espaço */
-  max-width: 1000px;                       /* Limita a largura total */
-  margin: 0 auto 40px auto;                /* Centraliza o bloco na página */
+  grid-template-columns: repeat(3, 1fr); /* Força 3 colunas por linha */
+  gap: 30px 20px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
 }
 
-/* Card individual do álbum */
 .estudante-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  text-align: center;
+  padding: 24px 0;
 }
 
 .estudante-nome {
   text-align: center;
 }
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
-.escola{
-background-image: linear-gradient(#aa5e5e,#D0E7E6);
-color: #fad2a5;
-display: flex;
-justify-content:center;
-padding: 24px 0;
-text-align:center;
-display:block;
-}
-.escola-titulo{
-padding: 50px;
-text-align: center;
-}
-.logo_rodape{
-height: 180px;
-padding: 12px 0;
 
-}
-
-.link
-color: #ffffff;
-text-decoration: none;
-
-
+/* SEÇÃO DE VÍDEO */
 .titulo-video {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
@@ -154,4 +127,27 @@ text-decoration: none;
 
 .container-video iframe {
   margin: 0 auto;
+}
+
+/* RODAPÉ */
+.escola {
+  background-image: linear-gradient(#aa5e5e, #D0E7E6);
+  color: #fad2a5;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.escola-titulo {
+  padding: 50px;
+  text-align: center;
+}
+
+.logo_rodape {
+  height: 180px;
+  padding: 12px 0;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
 }
