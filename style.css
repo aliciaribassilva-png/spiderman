@@ -84,26 +84,36 @@ li a:hover {
 }
 
 /* SEÇÃO DE ÁLBUNS (ORGANIZADOS 3 EM CIMA E 3 EM BAIXO) */
-.estudantes_todos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Força 3 colunas por linha */
-  gap: 30px 20px;
-  justify-items: center;
-  max-width: 1000px;
-  margin: 0 auto 40px auto;
-}
-
+/* Limita o tamanho do card do álbum */
 .estudante-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   text-align: center;
-  padding: 24px 0;
 }
 
-.estudante-nome {
-  text-align: center;
+/* Redimensiona a capa do álbum */
+.estudante-imagem {
+  width: 180px;         /* Ajusta a largura da capa do álbum */
+  height: 180px;        /* Mantém o formato quadrado */
+  object-fit: cover;    /* Evita que a imagem fique esticada */
+  border-radius: 8px;   /* Deixa as pontas levemente arredondadas */
+  margin-bottom: 10px;
+}
+
+/* REDIMENSIONA OS ÍCONES (Spotify, Instagram, Twitter) */
+.estudante-icone {
+  width: 24px;          /* Define um tamanho pequeno para os ícones */
+  height: 24px;
+  margin: 5px 3px;      /* Dá um pequeno espaço entre eles */
+  vertical-align: middle;
+}
+} 
+width: 24px;          /* Define um tamanho pequeno para os ícones */
+  height: 24px;
+  margin: 5px 3px;      /* Dá um pequeno espaço entre eles */
+  vertical-align: middle;
 }
 
 /* SEÇÃO DE VÍDEO */
