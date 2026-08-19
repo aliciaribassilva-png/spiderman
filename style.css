@@ -27,7 +27,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #b65a5a;
 }
 
 li {
@@ -103,7 +103,7 @@ display: flex;
 justify-content: space-around;
 }
 .escola{
-background-image: linear-gradient(#95CCDD,#D0E7E6);
+background-image: linear-gradient(#aa5e5e,#D0E7E6);
 color: #fad2a5;
 display: flex;
 justify-content:center;
