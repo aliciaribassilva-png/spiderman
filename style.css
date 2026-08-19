@@ -81,26 +81,27 @@ padding-right: 30px;
 display: flex;
 justify-content: center;
 }
-.estudante_titulo{
-padding: 50px;
-text-align: center;
-
-}
-.estudante-nome{
-text-align: center;
-}
-.estudante-imagem{
-width: 120px;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-background-image: background-color(#faae43);
-padding: 24px 0;
+/* Container que envolve todos os 6 álbuns */
+.estudantes_todos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+  gap: 30px 20px;                         /* Espaço entre as linhas e colunas */
+  justify-items: center;                   /* Centraliza cada card no seu espaço */
+  max-width: 1000px;                       /* Limita a largura total */
+  margin: 0 auto 40px auto;                /* Centraliza o bloco na página */
 }
 
+/* Card individual do álbum */
+.estudante-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.estudante-nome {
+  text-align: center;
+}
 .estudante.div{
 text-align: center;
 padding: 24px 0;
