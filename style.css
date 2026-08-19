@@ -10,8 +10,8 @@ background-color: #FFFDF1;
 }
   
 header{
-background-color: #447e49;
-color: #e4c991;
+background-color: #aa5e5e;
+color: #d4bc8c;
 width: 100%;
 padding: 20px;
 font-size: xx-large;
@@ -104,7 +104,7 @@ justify-content: space-around;
 }
 .escola{
 background-image: linear-gradient(#95CCDD,#D0E7E6);
-color: #F8EBAB;
+color: #fad2a5;
 display: flex;
 justify-content:center;
 padding: 24px 0;
