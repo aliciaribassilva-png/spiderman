@@ -1,621 +1,188 @@
-*{
-
-margin: 0;
-
-padding: 0;
-
-box-sizing: border-box;
-
+.menu-navegacao {
+    background-color: #ffd39a;
+    padding: 15px;
+    text-align: center;
 }
 
-body{
-
-font-family: "Poppins", sans-serif;
-
-background-color: #FFFDF1;
-
+.menu-navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
- 
-
-header{
-
-background-color: #9e5555;
-
-color: #d4bc8c;
-
-width: 100%;
-
-padding: 20px;
-
-font-size: xx-large;
-
-font-family:fantasy;
-
+.menu-navegacao li {
+    display: inline-block;
+    margin: 0 20px;
 }
 
-.container_pai {
-
-  display: flex;
-
-  justify-content: center; /* Centraliza horizontalmente */
-
-  align-items: center;     /* Centraliza verticalmente (opcional) */
-
+.menu-navegacao a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-ul {
-
-  list-style-type: none;
-
-  margin: 0;
-
-  padding: 0;
-
-  overflow: hidden;
-
-  background-color: #b85f5f;
-
+.menu-navegacao a:hover {
+    color: #fffde9;
 }
 
 
 
-li {
+.banner1 {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
 
-  float: left;
-
+.banner1 img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 
+.estudante {
+    padding: 50px 8%;
+    text-align: center;
+}
 
-li a {
-
-  display: block;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 14px 16px;
-
-  text-decoration: none;
-
+.estudante_titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 
-
-li a:hover {
-
-  background-color: #111;
-
-}
-
-.cabecalho-itens{
-
-max-width: 1980px;
-
-margin: 0 auto;
-
-display: flex;
-
-align-items: center;
-
-justify-content: center;
-
-}
-
-/* No elemento pai (ex: header ou div pai) */
-
-.container_pai {
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  width: 100%;
-
-}
-
-
-
-/* Na imagem */
-
-.cabecalho_imagem {
-
-  width: 300px; /* Altere para o tamanho desejado (ex: 50%, 400px, etc) */
-
-  height: auto;  /* Mantém a proporção original */
-
-}
-
-.titulo_site{
-
-padding: 50px;
-
-text-align: center;
-
-width: 50%;
-
-font: 30px;BE1A1A
-
-}
-
-.sociais{
-
-display: flex;
-
-justify-content: flex-end;
-
-width: 0%;
-
-padding-right: 30px;
-
-}
-
-.banner1{
-
-display: flex;
-
-justify-content: center;
-
-}
-
-/* Container que envolve todos os 6 álbuns */
+/* Grade dos filmes */
 
 .estudantes_todos {
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
-
-  gap: 30px 20px;                         /* Espaço entre as linhas e colunas */
-
-  justify-items: center;                   /* Centraliza cada card no seu espaço */
-
-  max-width: 1000px;                       /* Limita a largura total */
-
-  margin: 0 auto 40px auto;                /* Centraliza o bloco na página */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
 
 
-/* Card individual do álbum */
-
 .estudante-div {
+    background-color: #fdfbfb;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(20, 14, 66, 0.473);
+    transition: 0.3s;
+}
 
-  display: flex;
+.estudante-div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(14, 21, 54, 0.603);
+}
 
-  flex-direction: column;
 
-  align-items: center;
-
-  width: 100%;
-
+.estudante-imagem {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
 
 .estudante-nome {
-
-  text-align: center;
-
-}
-
-.estudante.div{
-
-text-align: center;
-
-padding: 24px 0;
-
-}
-
-.estudantes_todos{
-
-display: flex;
-
-justify-content: space-around;
-
-}
-
-.escola{
-
-background-image: linear-gradient(#aa5e5e,#D0E7E6);
-
-color: #fad2a5;
-
-display: flex;
-
-justify-content:center;
-
-padding: 24px 0;
-
-text-align:center;
-
-display:block;
-
-}
-
-.escola-titulo{
-
-padding: 50px;
-
-text-align: center;
-
-}
-
-.logo_rodape{
-
-height: 180px;
-
-padding: 12px 0;
-
-
-
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 
+/* Ícone/link */
 
-.link
-
-color: #ffffff;
-
-text-decoration: none;
-
-
-
-
-
-.titulo-video {
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  font-size: 20px;
-
-  font-weight: bold;
-
-  color: #faae43;
-
-  text-align: center;
-
-  margin-bottom: 15px;
-
+.estudante-icone {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
-
+.estudante-icone:hover {
+    transform: scale(1.15);
+}
 
 .container-video {
-
-  width: 100%;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  margin-top: 40px;
-
-  margin-bottom: 20px;
-
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3f3f3;
 }
-
-
-
-.container-video iframe {
-
-  margin: 0 auto;
-
-}*{
-
-margin: 0;
-
-padding: 0;
-
-box-sizing: border-box;
-
-}
-
-body{
-
-font-family: "Poppins", sans-serif;
-
-background-color: #FFFDF1;
-
-}
-
- 
-
-header{
-
-background-color: #9e5555;
-
-color: #d4bc8c;
-
-width: 100%;
-
-padding: 20px;
-
-font-size: xx-large;
-
-font-family:fantasy;
-
-}
-
-.container_pai {
-
-  display: flex;
-
-  justify-content: center; /* Centraliza horizontalmente */
-
-  align-items: center;     /* Centraliza verticalmente (opcional) */
-
-}
-
-ul {
-
-  list-style-type: none;
-
-  margin: 0;
-
-  padding: 0;
-
-  overflow: hidden;
-
-  background-color: #b85f5f;
-
-}
-
-
-
-li {
-
-  float: left;
-
-}
-
-
-
-li a {
-
-  display: block;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 14px 16px;
-
-  text-decoration: none;
-
-}
-
-
-
-li a:hover {
-
-  background-color: #111;
-
-}
-
-.cabecalho-itens{
-
-max-width: 1980px;
-
-margin: 0 auto;
-
-display: flex;
-
-align-items: center;
-
-justify-content: center;
-
-}
-
-/* No elemento pai (ex: header ou div pai) */
-
-.container_pai {
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  width: 100%;
-
-}
-
-
-
-/* Na imagem */
-
-.cabecalho_imagem {
-
-  width: 300px; /* Altere para o tamanho desejado (ex: 50%, 400px, etc) */
-
-  height: auto;  /* Mantém a proporção original */
-
-}
-
-.titulo_site{
-
-padding: 50px;
-
-text-align: center;
-
-width: 50%;
-
-font: 30px;BE1A1A
-
-}
-
-.sociais{
-
-display: flex;
-
-justify-content: flex-end;
-
-width: 0%;
-
-padding-right: 30px;
-
-}
-
-.banner1{
-
-display: flex;
-
-justify-content: center;
-
-}
-
-/* Container que envolve todos os 6 álbuns */
-
-.estudantes_todos {
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
-
-  gap: 30px 20px;                         /* Espaço entre as linhas e colunas */
-
-  justify-items: center;                   /* Centraliza cada card no seu espaço */
-
-  max-width: 1000px;                       /* Limita a largura total */
-
-  margin: 0 auto 40px auto;                /* Centraliza o bloco na página */
-
-}
-
-
-
-/* Card individual do álbum */
-
-.estudante-div {
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  width: 100%;
-
-}
-
-
-
-.estudante-nome {
-
-  text-align: center;
-
-}
-
-.estudante.div{
-
-text-align: center;
-
-padding: 24px 0;
-
-}
-
-.estudantes_todos{
-
-display: flex;
-
-justify-content: space-around;
-
-}
-
-.escola{
-
-background-image: linear-gradient(#aa5e5e,#D0E7E6);
-
-color: #fad2a5;
-
-display: flex;
-
-justify-content:center;
-
-padding: 24px 0;
-
-text-align:center;
-
-display:block;
-
-}
-
-.escola-titulo{
-
-padding: 50px;
-
-text-align: center;
-
-}
-
-.logo_rodape{
-
-height: 180px;
-
-padding: 12px 0;
-
-
-
-}
-
-
-
-.link
-
-color: #ffffff;
-
-text-decoration: none;
-
-
-
-
 
 .titulo-video {
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  font-size: 20px;
-
-  font-weight: bold;
-
-  color: #faae43;
-
-  text-align: center;
-
-  margin-bottom: 15px;
-
+    font-size: 28px;
+    margin-bottom: 25px;
 }
-
-
-
-.container-video {
-
-  width: 100%;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  margin-top: 40px;
-
-  margin-bottom: 20px;
-
-}
-
-
 
 .container-video iframe {
+    max-width: 100%;
+    border-radius: 15px;
+}
 
-  margin: 0 auto;
+
+/* =========================================
+   SEÇÃO SOBRE
+========================================= */
+
+#sobre {
+    background-color: #fffef6;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.escola {
+    text-align: center;
+    padding: 30px;
+    background-color: #000000;
+    color: rgb(9, 7, 24);
+}
+
+.logo_rodape {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+   Para celulares
+========================================= */
+
+@media (max-width: 800px) {
+
+    .estudantes_todos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-navegacao li {
+        margin: 8px;
+    }
 
 }
+
+
+@media (max-width: 500px) {
+
+    .estudantes_todos {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-navegacao li {
+        display: block;
+        margin: 12px;
+    }
+
+    .estudante {
+        padding: 40px 20px;
+    }
+
+}
+```
