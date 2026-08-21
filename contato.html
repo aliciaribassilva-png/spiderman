@@ -3,68 +3,84 @@
 <head>
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Pagina Pessoal</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!--header é a parte do cabeçalho do site, é o topo da página-->
+
+<!-- CABEÇALHO -->
 <header class="cabecalho-itens">
 
-<img class="cabecalho_imagem" src="tonny.jpg" alt="Logo da
-D
-Página">
 
-<h1 class="titulo_site">ALICIA</h1>
-<div class="sociais">
-<img class="sociais" src="youtube.logo.jpg" alt="logo_nossa_escola">
-<img class="sociais" src="TW_logo.jpg" alt="facebook.png">
-<img class="sociais" src="inta.jpg" alt="instagram da Escola">
-</div>
+
+    <h1 class="titulo_site">Alicai</h1>
+
+    <div class="sociais">
+      
+    </div>
+
 </header>
 
-<style>
-  ul {
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Transforma a lista em flexbox */
-    justify-content: center; /* Centraliza os itens na horizontal */
-    gap: 20px; /* Adiciona um espaço entre os links */
-  }
+<!-- MENU DE NAVEGAÇÃO -->
+<nav class="menu-navegacao">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personagens.html">Albuns favoritos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
 
-  ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #333; /* Cor do texto */
-  }
-</style>
+<!-- BANNER -->
+<section class="banner1" id="inicio">
 
-<!--MENU-->
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="albums.html">Albuns</a></li>
-  <li><a href="contato.html">Contato</a></li>
-  <li><a href="sobre.html">Sobre</a></li>
-</ul>
+    <img class="escola-image" src="tonny.jpg" alt="Banner da Escola">
 
+</section>
 <!--CONTEUDO-->
+<!-- SEÇÃO SOBRE -->
+<section class="estudante" id="sobre">
+
+    <h1 class="estudante_titulo">Sobre mim</h1>
+
+    <div class="estudantes_todos">
+
+        <div class="estudante-div">
+
+            <img class="estudante-imagem" src="tom.jpg"
+            alt="lilica">
+
+            <h3 class="estudante-nome">alicia</h3>
+
+            <a href="https://www.instagram.com/aliciaxrt_?igsi=d2F4dWgxZmQ2b3My">
+                <img class="estudante-icone" src="inta.jpg"
+                alt="Instagram">
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
 
-<!--Seção rodapé é a parte final da paragrafo 3 da página-->
-<footer class="escola">
-<img class="logo_rodape" src="twink.jpg" alt="Logo
-da Escola">
-<h2 class="escola-título"><a
-class="link" href=""> 
-</a></h2>
-<p></p>
-<p>
+<!-- RODAPÉ -->
+<footer class="escola" id="contato">
 
-</p>
-<p> </p>
+    <img class="logo_rodape" src="twink.jpg"
+    alt="Logo da Escola">
+
+    <h2 class="escola-título">
+        <a class="link" href=""></a>
+    </h2>
+
+    <p></p>
 </footer>
+
 </body>
+</html>
